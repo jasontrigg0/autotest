@@ -5,7 +5,9 @@ The idea is to run instrumented code that automatically records function calls a
 
 
 Usage:
+
 ```node main.js -f ./example.js #run exports.main from example.js and save the results for future testing```
+
 ```node main.js -f ./example.js --test #run previously generated tests on example.js```
 
 
@@ -37,8 +39,7 @@ function sometimesMultiply() {
   return i;
 }
 ```
-Now if we run sometimesMultiply, autotest will save the result of the call to the impure function rand(). When testing later, autotest will use the stored value and give deterministic results.    * May not to rerun this code in tests, it might corrupt the DB.
-
+Now if we run sometimesMultiply, autotest will save the result of the call to the impure function rand(). When testing later, autotest will use the stored value and give deterministic results.
 
 Solution:
 
