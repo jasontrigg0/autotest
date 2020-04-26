@@ -1,0 +1,17 @@
+{
+  "name": "autotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "autotest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "njstrace": "^1.2.0",
+    "papaparse": "^5.2.0",
+    "rewire": "^5.0.0",
+    "serialize-javascript": "^3.0.0"
+  }
+}
