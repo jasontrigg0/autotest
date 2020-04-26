@@ -40,7 +40,3 @@ function sometimesMultiply() {
 }
 ```
 Now if we run sometimesMultiply, autotest will save the result of the call to the impure function rand(). When testing later, autotest will use the stored value and give deterministic results.
-
-Solution:
-
-Annotate these functions with `//@sideEffect` and they'll be ignored by autotest. Furthermore, if other functions call the side effect function, autotest will cache the results so they aren't rerun during testing.
