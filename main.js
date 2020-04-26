@@ -40,7 +40,7 @@ function deserialize(o) {
 }
 
 async function getImpureFns() {
-  let files = ['/home/jtrigg/git/autotest/example.js'];
+  let files = [`${__dirname}/example.js`];
   let impureFns = [];
   for (let file of files) {
     let impureAnnotation = false;
